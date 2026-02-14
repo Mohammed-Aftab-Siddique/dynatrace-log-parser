@@ -48,3 +48,13 @@ This command will process the specified log file and ingest an output to dynatra
 ## Sample Output
 <img width="1944" height="1076" alt="image" src="https://github.com/user-attachments/assets/b4b49dac-f942-44e6-9aec-01cf1c70aed4" />
 
+# Version History
+
+# log_parser_v2
+- Updated the logic to fetch the latest log file.
+  - Added a check to use `ls` if the file count is less than `ARG_MAX` otherwise use `find`.
+  - This avoids the failure due to `Too Many Arguments`.
+
+## log_parser_v1
+- Initial Release
+
