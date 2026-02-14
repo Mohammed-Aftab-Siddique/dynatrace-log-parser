@@ -5,8 +5,13 @@ The `log_parser_v1.sh` script is designed to parse and analyze log files from dy
 
 ## Configuration
 To configure the script, you'll need to specify the following parameters:
-- `LOG_FILE` - The path to the log file that needs to be parsed.
-- `OUTPUT_FILE` - The file where the parsing results will be written.
+- `LOG_DIR` - The path to the log file that needs to be parsed.
+- `LOG_FILE` - The file where the parsing results will be written.
+- `HOST_IP` - The host ip of the source.
+- `URL` - Dynatrace tenant URL with environment ID.
+- `Access Token` - Access Token with Ingest.Metric permission.
+- `Keywords` - Array of keywords to match the log entries.
+- `Metric Name` - Metric name to be configured in the payload (recommended format: custom.app_name...)
 
 Ensure that the configuration values follow the required format to avoid issues during execution.
 
@@ -33,9 +38,9 @@ Ensure that the configuration values follow the required format to avoid issues 
 - **Permission Denied**: Check that the script has appropriate execution permissions.
 
 ## Examples
-To run the parser on a log file and save the output, use the following command:
+To run the parser on a log file, use the following command:
 ```bash
-./log_parser_v1.sh --log_file path/to/logfile.log --output_file path/to/output.txt
+./log_parser_v1.sh
 ```
 
-This command will process the specified log file and generate an output file with the results.
+This command will process the specified log file and ingest an output to dynatrace.
