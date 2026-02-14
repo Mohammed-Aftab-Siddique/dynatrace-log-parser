@@ -44,3 +44,7 @@ To run the parser on a log file, use the following command:
 ```
 
 This command will process the specified log file and ingest an output to dynatrace.
+
+## Sample Output
+<img width="1944" height="1076" alt="image" src="https://github.com/user-attachments/assets/b4b49dac-f942-44e6-9aec-01cf1c70aed4" />
+
