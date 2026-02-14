@@ -1,7 +1,7 @@
 # log_parser_v1.sh Documentation
 
 ## Overview
-The `log_parser` script is designed to parse and analyze log files from dynamic trace data sources. It provides insights into application performance, errors, and user interactions.
+The `log_parser` script is designed to parse and analyze log files from dynamic trace data sources. It provides insights into service errors on the Linux server.
 
 ## Configuration
 To configure the script, you'll need to specify the following parameters:
