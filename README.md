@@ -28,7 +28,19 @@ Ensure that the configuration values follow the required format to avoid issues 
    ```bash
    chmod +x log_parser_v1.sh
    ```
-
+## Metric Overview
+Metric Name:
+ ```bash
+   custom.log.error
+   ```
+Metric Dimensions:
+ ```bash
+   host, dir & service
+   ```
+Metric Value:
+ ```bash
+   status
+   ```
 ## Security Considerations
 - Be aware of the sensitivity of the log data being processed. Avoid exposing sensitive information in the output files.
 - Run the script in a secure environment to prevent unauthorized access to the log files.
